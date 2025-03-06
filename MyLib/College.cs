@@ -54,10 +54,10 @@ namespace MyLib
 
         public void PrintGroups()  // Метод для вывода списка групп в колледже
         {
-            Console.WriteLine($"Groups in {CollegeName}:");
+            Console.WriteLine($"Группа в {CollegeName}:");
             if (Groups.Count == 0)
             {
-                Console.WriteLine("  (No groups in this college)");
+                Console.WriteLine("  (Нету группы в этои колледже)");
                 return;
             }
             foreach (var group in Groups)

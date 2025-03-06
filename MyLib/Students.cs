@@ -26,7 +26,7 @@ namespace MyLib
 
         public override string ToString() // Переопределение для более удобного вывода информации о студенте
         {
-            return $"Student ID: {StudentId}, Name: {FirstName} {LastName}, Email: {Email}";
+            return $"ID Студента: {StudentId}, Имя: {FirstName} {LastName}, Почта: {Email}";
         }
     }
 }

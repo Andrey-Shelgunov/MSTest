@@ -52,15 +52,15 @@ namespace MyLib
 
         public override string ToString() // Переопределение для более удобного вывода информации о группе
         {
-            return $"Group: {GroupName}, Students: {Students.Count}";
+            return $"Группа: {GroupName}, Студент: {Students.Count}";
         }
 
         public void PrintStudents()  // Метод для вывода списка студентов в группе
         {
-            Console.WriteLine($"Students in group {GroupName}:");
+            Console.WriteLine($"Студент в группе {GroupName}:");
             if (Students.Count == 0)
             {
-                Console.WriteLine("  (No students in this group)");
+                Console.WriteLine("  (Нету студента в этой группе)");
                 return;
             }
             foreach (var student in Students)
