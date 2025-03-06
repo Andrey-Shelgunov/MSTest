@@ -6,13 +6,27 @@ using System.Threading.Tasks;
 
 namespace MyLib
 {
-    internal class Students
+    // Класс для представления студента
+    public class Student
     {
-        public string Name { get; private set; }
+        public int StudentId { get; set; } // Уникальный идентификатор студента
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string Email { get; set; }
 
-        public Students(string name)
+        public Student(int studentId, string firstName, string lastName, DateTime dateOfBirth, string email)
         {
-            Name = name;
+            StudentId = studentId;
+            FirstName = firstName;
+            LastName = lastName;
+            DateOfBirth = dateOfBirth;
+            Email = email;
+        }
+
+        public override string ToString() // Переопределение для более удобного вывода информации о студенте
+        {
+            return $"Student ID: {StudentId}, Name: {FirstName} {LastName}, Email: {Email}";
         }
     }
 }
